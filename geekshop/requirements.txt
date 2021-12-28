@@ -22,7 +22,7 @@ idna==3.3
 inflection==0.5.1
 itypes==1.2.0
 Jinja2==3.0.3
-lxml==4.6.3
+#lxml==4.6.3
 MarkupSafe==2.0.1
 mixer==7.2.0
 packaging==21.3
