@@ -3,7 +3,8 @@
 {% block content %}
     <div class="col-lg-5">
         {% if form.non_field_errors  or messages %}
-              <div class="alert {% if messages %} alert-success {% else %} alert-warning {% endif %}alert-dismissible fade show" role="alert"
+            <div class="alert {% if messages %} alert-success {% else %} alert-warning {% endif %}alert-dismissible fade show"
+                 role="alert"
                  style="margin-top: 50px;">
 
                 {% if messages %}
@@ -47,4 +48,24 @@
             </div>
         </div>
     </div>
+    <button class="btn btn-round form-control">
+        <a href="{% url 'auth:register' %}" class="">
+            Зарегистрироваться
+        </a>
+    </button>
+    <button class="btn btn-round form-control">
+        <a href="{% url 'social:begin' 'vk-oauth2' %}?next=/">
+            Вход через ВКонтакте
+        </a>
+    </button>
+                            <button class="btn btn-round form-control">
+                            <a href="{% url 'auth:register' %}" class="">
+                                Зарегистрироваться
+                            </a>
+                        </button>
+                        <button class="btn btn-round form-control">
+                            <a href="{% url 'social:begin' 'vk-oauth2' %}?next=/">
+                                Вход через ВКонтакте
+                            </a>
+                        </button>
 {% endblock %}
